@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+void display(char c= '*', int count = 3) {
+    for(int i=1; i<=count; ++i) {
+        cout<< c;
+        
+    }
+    cout <<endl;
+}
+
+int main(){
+    int count=5;
+    
+    cout<<"No arguement passed: ";
+    display();
+    
+    cout<< "First arguement passed : ";
+    display('#');
+    
+    cout<<"Both arguement passed; ";
+    display('$', count);
+    return 0;
+}
